@@ -13,6 +13,7 @@ int main()
 	long long *Max=max_element(a+1,a+4);//MAX 
 	cout<<*Max<<" "<<Max-a;
 	int b=Max-a;//MAX position
+        while(a[1]!=a[2]&&a[2]!=a[3]){
 	for(int i=0;i<3&&i!=b;i++)
 	{
 			if(a[b]-a[i]<2)
@@ -46,5 +47,7 @@ int main()
 				count++;
 			}
 	} 
+}
+cout<<count<<endl;
 	return 0;
 } 
