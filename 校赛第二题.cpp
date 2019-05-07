@@ -41,7 +41,7 @@ int main()
 						}
 				
 			}
-			else if(a[b]-a[i]>2)
+			else if(a[b]-a[i]>=2)
 			{
 				a[i]+=2;
 				count++;
