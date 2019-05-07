@@ -15,21 +15,14 @@ int main()
 	int b=Max-a;//MAX position
 	for(int i=0;i<3&&i!=b;i++)
 	{
-			if(a[b]-a[i]<=2)
-			{
-				if(a[b]-a[i]==2)
+			if(a[b]-a[i]<2)
 				{
-					a[i]+=2;
-					count++;
-				}
-				else if(a[b]-a[i]==1)
-				{
-						//(6-max-i)ÁíÍâÒ»¸öÊý	
+						//(6-max-i)ÃÃ­ÃÃ¢Ã’Â»Â¸Ã¶ÃŠÃ½	
 						if(a[b]-a[6-b-i]==0)
 						{
 							a[i]+=2;
 							a[b]++;
-							a[6-b-i]+=2;
+							a[6-b-i]++;
 							count+=2;
 						}
 						else if(a[b]-a[6-b-i]==1)
@@ -45,7 +38,7 @@ int main()
 							a[6-b-i]+=2;
 							count+=3;
 						}
-				}
+				
 			}
 			else if(a[b]-a[i]>2)
 			{
